@@ -31,7 +31,7 @@ var Counter = React.createClass({
     },
 
     componentDidMount: function() {
-        console.log('?');
+        console.log('np.załadować dane z serwera');
     },
 
     componentWillReceiveProps: function() {
@@ -40,6 +40,7 @@ var Counter = React.createClass({
 
     shouldComponentUpdate: function() {
         console.log('optymalizowanie aplikacji')
+        return true;
     },
 
     componentWillUpdate: function() {
@@ -66,8 +67,7 @@ var Counter = React.createClass({
 
 var CountersList = React.createClass({
     render: function() {
-        return
-        React.createElement('div', {},
+        return React.createElement('div', {},
             React.createElement(Counter),
             React.createElement(Counter),
             React.createElement(Counter),
@@ -75,9 +75,6 @@ var CountersList = React.createClass({
     }
 
 });
-
-
-
 
 var element = React.createElement(CountersList);
 ReactDOM.render(element, document.getElementById('app'));
