@@ -1,3 +1,21 @@
 body {
     background-color: khaki;
 }
+
+.btn-info {
+    color: red;
+    margin: 10px;
+}
+
+btn {
+    color: blue;
+}
+
+div {
+    text-align: center;
+    margin-top: 120px;
+}
+
+span {
+    color: blue;
+}
